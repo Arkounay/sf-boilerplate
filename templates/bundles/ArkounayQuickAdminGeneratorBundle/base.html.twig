@@ -1,0 +1,12 @@
+{% extends '@!ArkounayQuickAdminGenerator/base.html.twig' %}
+
+{% block css %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('admin', null, 'admin') }}
+{% endblock %}
+
+
+{% block head_js %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('admin', null, 'admin') }}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends '@ArkounayQuickAdminGenerator/crud/form.html.twig' %}
+
+{% block form_content %}
+    {{ form_row(form.image) }}
+
+    <div class="row">
+        <div class="col-md-6">
+            {{ form_row(form.startDate, {help: "L'actualité ne sera visible qu'à partir de cette date."}) }}
+        </div>
+        <div class="col-md-6">
+            {{ form_row(form.endDate, {help: "Si spécifiée, l'actualité sera visible jusqu'à cette date."}) }}
+        </div>
+    </div>
+
+    {{ form_row(form.title) }}
+    {{ form_row(form.content) }}
+
+    {{ form_rest(form) }}
+{% endblock %}

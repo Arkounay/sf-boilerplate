@@ -1,0 +1,35 @@
+{% extends '@ArkounayQuickAdminGenerator/crud/view.html.twig' %}
+
+{% block action_name %}
+    {{ parent() }} - {{ entity.createdAt|date('d/m/Y') }}
+{% endblock %}
+
+{% block fields %}
+    {{ _self.render_fields(entity) }}
+{% endblock %}
+
+{% macro render_fields(contact) %}
+    {# contact \App\Entity\Contact #}
+    <tr>
+        <th>Date d'envoi</th>
+        <td>Le {{ contact.createdAt|date('d/m/Y à H:i') }}</td>
+    </tr>
+    <tr>
+        <th>Prénom</th>
+        <td>{{ contact.firstname }}</td>
+    </tr>
+    <tr>
+        <th>Nom</th>
+        <td>{{ contact.lastname }}</td>
+    </tr>
+    <tr>
+        <th>E-mail</th>
+        <td>{{ contact.email }}</td>
+    </tr>
+    <tr>
+        <th>Message</th>
+        <td>
+            {{ contact.message|nl2br }}
+        </td>
+    </tr>
+{% endmacro %}

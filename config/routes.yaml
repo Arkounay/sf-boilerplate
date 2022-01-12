@@ -5,3 +5,18 @@ controllers:
 kernel:
     resource: ../src/Kernel.php
     type: annotation
+
+file_manager:
+    resource: "@ArtgrisFileManagerBundle/Controller"
+    type:     annotation
+    prefix:   /admin/manager
+
+ux_media:
+    resource: "@ArkounayUxMediaBundle/Controller"
+    type: annotation
+    prefix: /admin/ux-media
+
+qag_routes:
+    resource: 'Arkounay\Bundle\QuickAdminGeneratorBundle\Crud\RouteLoader'
+    type: service
+    prefix: '/admin'

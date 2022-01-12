@@ -1,0 +1,33 @@
+{% import '@ArkounayQuickAdminGenerator/crud/entities/contact/view.html.twig' as contact_renderer %}
+{% apply inline_css %}
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+        }
+        tr {
+            border-bottom: 1px solid #cccccc;
+        }
+        th, td {
+            padding: 5px;
+        }
+        tr:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            margin-top: 15px;
+        }
+    </style>
+
+    <h3>Nouvelle demande de contact.</h3>
+
+    <table>
+        {{ contact_renderer.render_fields(contact) }}
+    </table>
+
+    <div class="footer">
+        <a href="{{ url('qag.contact_view', {id: contact.id}) }}">Voir dans l'admin</a>
+    </div>
+{% endapply %}

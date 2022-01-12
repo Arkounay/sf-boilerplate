@@ -1,0 +1,33 @@
+{
+    "controllers": {
+        "@arkounay/ux-media": {
+            "media": {
+                "fetch": "eager",
+                "enabled": true,
+                "autoimport": {
+                    "@arkounay/ux-media/src/style.css": true
+                }
+            },
+            "upload": {
+                "fetch": "eager",
+                "enabled": true
+            },
+            "crop": {
+                "fetch": "eager",
+                "enabled": true,
+                "autoimport": {
+                    "cropperjs/dist/cropper.min.css": true,
+                    "@arkounay/ux-media/src/crop_style.css": true
+                }
+            },
+            "bootstrap_modal": {
+                "fetch": "eager",
+                "enabled": false,
+                "autoimport": {
+                    "@arkounay/ux-media/src/bootstrap_modal.scss": true
+                }
+            }
+        }
+    },
+    "entrypoints": []
+}

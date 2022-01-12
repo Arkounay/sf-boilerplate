@@ -1,0 +1,3 @@
+{% if value is not empty %}
+    <img class="table-thumbnail" src="{{ gImage(value|first).zoomCrop(100, 60) }}">
+{% endif %}

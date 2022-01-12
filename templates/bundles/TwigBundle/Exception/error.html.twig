@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+<div class="page_error">
+    <div>
+        <img src="{{ asset('images/illustrations/illu-top-404.svg') }}" role="presentation">
+    </div>
+
+    <div class="page_error_content">
+
+        <span class="page_error_code">{{ status_code }}</span>
+
+        <div class="text-center">
+            <h1 class="mb-1">{{ status_text }}</h1>
+
+            <p class="text-4 text-primary-dark">Nous sommes désolés, une erreur est survenue.</p>
+            <p>
+                <a href="{{ path('homepage') }}" class="btn-primary">Retour à l'accueil</a>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <img src="{{ asset('images/illustrations/illu-bottom-404.svg') }}" role="presentation">
+    </div>
+</div>
+{% endblock %}

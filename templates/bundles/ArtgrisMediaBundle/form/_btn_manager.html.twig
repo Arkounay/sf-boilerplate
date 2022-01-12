@@ -1,0 +1,16 @@
+{% if not form.vars.required %}
+    <button class="btn btn-light artgris-media-button-erase" type="button">
+        <span class="fas fa-eraser text-danger"></span>
+    </button>
+{% endif %}
+
+<span class="btn btn-light fileinput-button">
+    <span class="fas fa-plus text-success"></span>
+    <input class="fileupload {{ collection is defined ? 'alone' }}" type="file" data-url="{{ path('file_manager_upload', {conf:conf}) }}" name="files[]" multiple="">
+</span>
+
+{% if form.vars.display_file_manager %}
+    <button type="button" class="btn btn-light artgris-media-button-upload btn-manager" data-bs-toggle="modal" data-bs-target="#artgris-filemanager-modal-{{ id }}" data-target="#artgris-filemanager-modal-{{ id }}">
+        <span class="far fa-folder-open"></span>
+    </button>
+{% endif %}
