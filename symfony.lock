@@ -1,4 +1,7 @@
 {
+    "arkounay/gregwar-image-bundle": {
+        "version": "2.x-dev"
+    },
     "arkounay/quick-admin-generator-bundle": {
         "version": "3.0.0"
     },

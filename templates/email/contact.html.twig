@@ -1,33 +1,20 @@
-{% import '@ArkounayQuickAdminGenerator/crud/entities/contact/view.html.twig' as contact_renderer %}
-{% apply inline_css %}
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-        th {
-            text-align: left;
-        }
-        tr {
-            border-bottom: 1px solid #cccccc;
-        }
-        th, td {
-            padding: 5px;
-        }
-        tr:last-child {
-            border-bottom: none;
-        }
-        .footer {
-            margin-top: 15px;
-        }
-    </style>
+{% extends 'email/base_mail_admin.html.twig' %}
 
-    <h3>Nouvelle demande de contact.</h3>
+{% import '@ArkounayQuickAdminGenerator/crud/entities/contact/view.html.twig' as contact_renderer %}
+
+{% block content %}
+    <h1>Nouvelle demande de contact.</h1>
+    <div class="mb-1">Bonjour,</div>
+    <div>
+        Vous avez reçu une nouvelle demande de contact via le site <a href="{{ app.request.schemeAndHttpHost }}">{{ app.request.host }}</a>.
+    </div>
 
     <table>
         {{ contact_renderer.render_fields(contact) }}
     </table>
 
     <div class="footer">
-        <a href="{{ url('qag.contact_view', {id: contact.id}) }}">Voir dans l'admin</a>
+        <a class="btn" target="_blank" href="{{ url('qag.contact_view', {id: contact.id}) }}">Voir dans l'admin</a>
     </div>
-{% endapply %}
+{% endblock %}
+

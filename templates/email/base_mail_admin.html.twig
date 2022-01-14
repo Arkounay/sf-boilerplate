@@ -1,0 +1,72 @@
+<style>
+    .btn:hover {
+        background: #2d8aff !important;
+    }
+</style>
+{% apply inline_css %}
+    <style>
+        body {
+            font-family: Ubuntu, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            text-align: left;
+        }
+        tr {
+            border-bottom: 1px solid #d7d7d7;
+        }
+        th, td {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            vertical-align: baseline;
+        }
+        tr:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        div {
+            margin-bottom: 30px;
+            display: block;
+        }
+        .mb-1 {
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #167DFF;
+            color: #ffffff;
+            font-family: Ubuntu, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 120%;
+            margin: 0;
+            text-decoration: none;
+            text-transform: none;
+            padding: 10px 25px;
+            mso-padding-alt: 0;
+            border-radius: 3px;
+        }
+    </style>
+
+    <div class="container">
+        {% block content %}
+            
+        {% endblock %}
+    </div>
+
+{% endapply %}

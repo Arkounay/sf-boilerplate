@@ -20,7 +20,7 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
-    
+
     #[Route('/contact', name: 'contact')]
     public function contact(Request $request, EntityManagerInterface $em, MailingService $mailingService): Response
     {
@@ -32,7 +32,7 @@ class MainController extends AbstractController
             $em->persist($contact);
             $em->flush();
             $mailingService->sendContact($contact);
-            $this->addFlash('success', "Merci, votre message a été envoyé. Nous reviendrons vers vous dès que possible.");
+            $this->addFlash('success', 'Merci, votre message a été envoyé. Nous reviendrons vers vous dès que possible.');
 
             return $this->redirectToRoute('contact');
         }

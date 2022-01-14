@@ -8,6 +8,8 @@ import 'tinymce/plugins/lists';
 import 'tinymce/plugins/charmap';
 import 'tinymce/plugins/hr';
 import 'tinymce/plugins/anchor';
+import 'tinymce/plugins/emoticons';
+import 'tinymce/plugins/emoticons/js/emojis';
 import 'tinymce/plugins/code';
 import 'tinymce/plugins/fullscreen';
 import 'tinymce/plugins/media';
@@ -25,13 +27,10 @@ import 'tinymce/skins/ui/oxide/skin.min.css';
 export default class extends Controller {
 
     connect() {
-
-        // le callback de filemanager est pas compatible avec tinymce v5 pour les images
-
         function fileBrowser(callback, value, meta) {
 
             const type = meta.filetype;
-            let cmsURL = "/admin/manager/?conf=images&module=tiny";
+            let cmsURL = "/admin/manager/?conf=default&module=tiny";
             if (cmsURL.indexOf("?") < 0) {
                 cmsURL = cmsURL + "?type=" + type;
             }
@@ -62,7 +61,7 @@ export default class extends Controller {
                 buttons: [],
                 onClose: function () {
                     if (tinymceCallBackURL != '')
-                        callback(tinymceCallBackURL, {}); //to set selected file path
+                        callback(encodeURI(tinymceCallBackURL), {}); //to set selected file path
                 }
             });
         }
@@ -72,25 +71,26 @@ export default class extends Controller {
         let options = {
             target: this.element,
             skin: false,
-            plugins: 'advlist autolink link image lists charmap hr anchor code fullscreen media nonbreaking autoresize directionality paste',
-            // file_picker_callback: tinyBrowser,
+            plugins: 'advlist autolink link emoticons image lists charmap hr anchor code fullscreen media nonbreaking autoresize directionality paste',
+            convert_urls: false,
             width: "auto",
             statusbar: false,
             image_dimensions: false,
-            toolbar: "undo redo | bold italic | backcolor forecolor styleselect | alignleft aligncenter alignright alignjustify | bullist numlist | link image | removeformat | code",
+            toolbar: "undo redo | emoticons | bold italic | backcolor forecolor | alignleft aligncenter alignright alignjustify | bullist numlist | link image  | removeformat | code", // styleselect
             extended_valid_elements: "div[*],meta[*],span[*]",
             menubar: false,
             min_height: 200,
             valid_elements: '*[*]',
             remove_script_host: false,
-            content_css: false,
+            content_css: '/admin/tinymce_content.min.css',
             cleanup: false,
             contextmenu: false,
             entity_encoding: "raw",
             language: "fr_FR",
             browser_spellcheck: true,
+            document_base_url: window.location.origin,
             branding: false,
-            style_formats:[{ title: 'Titre (h2)', format: 'h2' }, { title: 'Titre (h3)', format: 'h3' }, { title: 'Paragraph', format: 'p' }],
+            // style_formats:[{ title: 'Titre (h2)', format: 'h2' }, { title: 'Titre (h3)', format: 'h3' }, { title: 'Paragraph', format: 'p' }],
             autoresize_overflow_padding: 10,
             autoresize_bottom_margin: 0,
             file_picker_callback: fileBrowser,

@@ -1,7 +1,7 @@
 {% extends '@ArkounayQuickAdminGenerator/crud/view.html.twig' %}
 
-{% block action_name %}
-    {{ parent() }} - {{ entity.createdAt|date('d/m/Y') }}
+{% block content_title %}
+    {{ entity.firstname }} {{ entity.lastname}} - {{ entity.createdAt|date('d/m/Y') }}
 {% endblock %}
 
 {% block fields %}
@@ -24,7 +24,7 @@
     </tr>
     <tr>
         <th>E-mail</th>
-        <td>{{ contact.email }}</td>
+        <td><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></td>
     </tr>
     <tr>
         <th>Message</th>

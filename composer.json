@@ -7,6 +7,7 @@
         "php": ">=8.0.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "arkounay/gregwar-image-bundle": "^4.0",
         "arkounay/quick-admin-generator-bundle": "^3.0",
         "arkounay/ux-media": "^2.1",
         "doctrine/annotations": "^1.0",

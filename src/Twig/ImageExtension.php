@@ -3,6 +3,8 @@
 namespace App\Twig;
 
 use Gregwar\Image\Image;
+use Gregwar\ImageBundle\ImageHandler;
+use Gregwar\ImageBundle\Services\ImageHandling;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 use Twig\TwigFunction;
@@ -53,7 +55,7 @@ class ImageExtension extends AbstractExtension
         return (string)$this->image($path)->cropResize($width, $height);
     }
 
-    public function zoomCropImage(?string $path, int $width, int $height, int $background = 0xffffff, ?int $xPos = null, ?int $yPos = null): string
+    public function zoomCropImage(?string $path, int $width, int $height, int $background = 0xffffff, string|int $xPos = 'center', string|int $yPos = 'center'): string
     {
         if (!$path) {
             return '';
@@ -80,6 +82,8 @@ class ImageExtension extends AbstractExtension
         if ($path !== null && $path[0] === '/') {
             $path = urldecode(mb_substr($path, 1));
         }
+
+        dump($path);
 
         return $this->imageHandling->open($path);
     }
