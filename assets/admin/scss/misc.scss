@@ -1,0 +1,37 @@
+
+:root {
+  --question-mark-bg: #F4F6FA;
+  --question-mark-bg-hover: #e1e4ea;
+  --question-mark-border: #f4e2ff;
+}
+
+.theme-dark {
+  --question-mark-bg: #222e42;
+  --question-mark-bg-hover: #1B2434;
+  --question-mark-border: #293345;
+}
+
+.question-mark {
+  background-color: var(--question-mark-bg);
+  border-radius: 100%;
+  color: #838ce7;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+  transition: all 200ms;
+
+  &:hover {
+    background-color: var(--question-mark-bg-hover);
+  }
+}
+
+.question-mark--small {
+  width: 14px;
+  height: 14px;
+  bottom: 9px;
+  border: 1px solid var(--question-mark-border);
+}

@@ -1,5 +1,9 @@
 {% if value is not empty %}
-    <div {% if value < date('now') %}class="text-danger" data-bs-toggle="tooltip" title="La date de fin est antérieure à aujourd'hui. L'élément n'apparaîtra donc pas sur le site." {% endif %}>
+    {% set disabled = value < date('now') %}
+    <span {% if disabled %}class="text-danger"{% endif %}>
         {{ value|date('d/m/Y') }}
-    </div>
+        {% if disabled %}
+            <span class="question-mark question-mark--small" data-bs-toggle="tooltip" title="La date de fin est antérieure à aujourd'hui. L'élément n'apparaîtra donc pas sur le site.">{{ qag_render_icon('question-mark', 12, 12) }}</span>
+        {% endif %}
+    </span>
 {% endif %}
