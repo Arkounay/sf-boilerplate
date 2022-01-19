@@ -6,11 +6,9 @@ namespace App\Listener\Admin;
 
 use App\Controller\Admin\Crud;
 use App\Entity\Travel;
-use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Field;
 use Artgris\Bundle\MediaBundle\Form\Type\MediaType;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Routing\RouterInterface;
 
 class QuickSearchItemListener implements EventSubscriberInterface

@@ -5,8 +5,6 @@ namespace App\Controller\Admin;
 
 
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Fields;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

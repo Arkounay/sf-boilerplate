@@ -2,7 +2,6 @@
 
 namespace App\Twig;
 
-use Gregwar\Image\Image;
 use Gregwar\ImageBundle\ImageHandler;
 use Gregwar\ImageBundle\Services\ImageHandling;
 use Twig\Extension\AbstractExtension;

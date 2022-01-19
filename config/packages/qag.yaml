@@ -1,0 +1,3 @@
+arkounay_quick_admin_generator:
+    title: '%project_name%'
+    #dashboard_route_redirection: 'qag.news'

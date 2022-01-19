@@ -4,13 +4,13 @@ namespace App\Entity;
 
 use App\Form\Admin\TinymceType;
 use App\Repository\NewsRepository;
+use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
+use Arkounay\Bundle\UxMediaBundle\Validator as MediaAssert;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
-use Symfony\Component\Validator\Context\ExecutionContextInterface;
 use Gedmo\Mapping\Annotation as Gedmo;
-use Arkounay\Bundle\UxMediaBundle\Validator as MediaAssert;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 #[ORM\Entity(repositoryClass: NewsRepository::class)]
 class News

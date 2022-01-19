@@ -6,8 +6,8 @@ use App\Entity\Enum\ContactSubjectType;
 use App\Entity\Enum\ContactType;
 use App\Form\EnumType;
 use App\Repository\ContactRepository;
-use Doctrine\ORM\Mapping as ORM;
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
+use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ContactRepository::class)]
