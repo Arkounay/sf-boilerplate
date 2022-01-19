@@ -9,6 +9,6 @@ set project_name [ProjectName] \
 && composer install \
 && rm -rf .git \
 && rm README.md \
-&& nvm use lts && node -v > .nvmrc
+&& nvm use lts && node -v > .nvmrc \
 && yarn && yarn dev && yarn admin-dev
 ```
