@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42e7dfb5ad1c576d731775e6f3ac7ccf",
+    "content-hash": "8ecffd64aa6191584aeac7cd4af4af30",
     "packages": [
         {
             "name": "arkounay/gregwar-image-bundle",
@@ -66,16 +66,16 @@
         },
         {
             "name": "arkounay/quick-admin-generator-bundle",
-            "version": "3.0.2",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arkounay/QuickAdminGeneratorBundle.git",
-                "reference": "4136518838efce74031fcbcf662dd4f8208f6e39"
+                "reference": "4b66ec858133a6327fe46e69a5693755bcb0be9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arkounay/QuickAdminGeneratorBundle/zipball/4136518838efce74031fcbcf662dd4f8208f6e39",
-                "reference": "4136518838efce74031fcbcf662dd4f8208f6e39",
+                "url": "https://api.github.com/repos/Arkounay/QuickAdminGeneratorBundle/zipball/4b66ec858133a6327fe46e69a5693755bcb0be9b",
+                "reference": "4b66ec858133a6327fe46e69a5693755bcb0be9b",
                 "shasum": ""
             },
             "require": {
@@ -141,22 +141,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Arkounay/QuickAdminGeneratorBundle/issues",
-                "source": "https://github.com/Arkounay/QuickAdminGeneratorBundle/tree/3.0.2"
+                "source": "https://github.com/Arkounay/QuickAdminGeneratorBundle/tree/3.0.5"
             },
-            "time": "2022-01-12T15:06:25+00:00"
+            "time": "2022-01-21T08:53:34+00:00"
         },
         {
             "name": "arkounay/ux-collection",
-            "version": "2.0.0",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arkounay/ux-collection.git",
-                "reference": "fa168fe0477386b0b098548d06da19b051dc9df6"
+                "reference": "790c8d28af64c4a09221a7dbed4b38a21c0b2c18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arkounay/ux-collection/zipball/fa168fe0477386b0b098548d06da19b051dc9df6",
-                "reference": "fa168fe0477386b0b098548d06da19b051dc9df6",
+                "url": "https://api.github.com/repos/Arkounay/ux-collection/zipball/790c8d28af64c4a09221a7dbed4b38a21c0b2c18",
+                "reference": "790c8d28af64c4a09221a7dbed4b38a21c0b2c18",
                 "shasum": ""
             },
             "require": {
@@ -190,22 +190,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Arkounay/ux-collection/issues",
-                "source": "https://github.com/Arkounay/ux-collection/tree/2.0.0"
+                "source": "https://github.com/Arkounay/ux-collection/tree/2.0.3"
             },
-            "time": "2021-12-14T08:15:43+00:00"
+            "time": "2022-01-21T08:37:39+00:00"
         },
         {
             "name": "arkounay/ux-media",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arkounay/ux-media.git",
-                "reference": "c4e042bb985176d6d6dc78ce1972053d74fea89a"
+                "reference": "abc62a49f7829e35823e19150cef21b99245080f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arkounay/ux-media/zipball/c4e042bb985176d6d6dc78ce1972053d74fea89a",
-                "reference": "c4e042bb985176d6d6dc78ce1972053d74fea89a",
+                "url": "https://api.github.com/repos/Arkounay/ux-media/zipball/abc62a49f7829e35823e19150cef21b99245080f",
+                "reference": "abc62a49f7829e35823e19150cef21b99245080f",
                 "shasum": ""
             },
             "require": {
@@ -243,9 +243,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Arkounay/ux-media/issues",
-                "source": "https://github.com/Arkounay/ux-media/tree/2.2.0"
+                "source": "https://github.com/Arkounay/ux-media/tree/2.2.1"
             },
-            "time": "2022-01-14T15:06:31+00:00"
+            "time": "2022-01-21T08:21:39+00:00"
         },
         {
             "name": "artgris/filemanager-bundle",
@@ -913,20 +913,20 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.2.1",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "4caf37acf14b513a91dd4f087f7eda424fa25542"
+                "reference": "a4b37db6f186b6843474189b424aed6a7cc5de4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4caf37acf14b513a91dd4f087f7eda424fa25542",
-                "reference": "4caf37acf14b513a91dd4f087f7eda424fa25542",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/a4b37db6f186b6843474189b424aed6a7cc5de4b",
+                "reference": "a4b37db6f186b6843474189b424aed6a7cc5de4b",
                 "shasum": ""
             },
             "require": {
-                "composer/package-versions-deprecated": "^1.11.99",
+                "composer-runtime-api": "^2",
                 "doctrine/cache": "^1.11|^2.0",
                 "doctrine/deprecations": "^0.5.3",
                 "doctrine/event-manager": "^1.0",
@@ -937,13 +937,13 @@
             "require-dev": {
                 "doctrine/coding-standard": "9.0.0",
                 "jetbrains/phpstorm-stubs": "2021.1",
-                "phpstan/phpstan": "1.3.0",
+                "phpstan/phpstan": "1.4.0",
                 "phpstan/phpstan-strict-rules": "^1.1",
                 "phpunit/phpunit": "9.5.11",
                 "psalm/plugin-phpunit": "0.16.1",
                 "squizlabs/php_codesniffer": "3.6.2",
                 "symfony/cache": "^5.2|^6.0",
-                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0|^6.0",
+                "symfony/console": "^2.7|^3.0|^4.0|^5.0|^6.0",
                 "vimeo/psalm": "4.16.1"
             },
             "suggest": {
@@ -1004,7 +1004,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.2.1"
+                "source": "https://github.com/doctrine/dbal/tree/3.3.0"
             },
             "funding": [
                 {
@@ -1020,7 +1020,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-05T08:52:06+00:00"
+            "time": "2022-01-18T00:13:52+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1595,20 +1595,20 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "3.3.2",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "b6e43bb5815f4dbb88c79a0fef1c669dfba52d58"
+                "reference": "e17a946a9d3693cc2f3c285e6667522ded237f71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/b6e43bb5815f4dbb88c79a0fef1c669dfba52d58",
-                "reference": "b6e43bb5815f4dbb88c79a0fef1c669dfba52d58",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/e17a946a9d3693cc2f3c285e6667522ded237f71",
+                "reference": "e17a946a9d3693cc2f3c285e6667522ded237f71",
                 "shasum": ""
             },
             "require": {
-                "composer/package-versions-deprecated": "^1.8",
+                "composer-runtime-api": "^2",
                 "doctrine/dbal": "^2.11 || ^3.0",
                 "doctrine/deprecations": "^0.5.3",
                 "doctrine/event-manager": "^1.0",
@@ -1631,7 +1631,7 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpstan/phpstan-symfony": "^0.12",
                 "phpunit/phpunit": "^8.5 || ^9.4",
-                "symfony/cache": "^3.4.26 || ~4.1.12 || ^4.2.7 || ^5.0 || ^6.0",
+                "symfony/cache": "^3.4.26 || ^4.2.12 || ^5.0 || ^6.0",
                 "symfony/process": "^3.4 || ^4.0 || ^5.0 || ^6.0",
                 "symfony/yaml": "^3.4 || ^4.0 || ^5.0 || ^6.0"
             },
@@ -1681,7 +1681,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/migrations/issues",
-                "source": "https://github.com/doctrine/migrations/tree/3.3.2"
+                "source": "https://github.com/doctrine/migrations/tree/3.4.0"
             },
             "funding": [
                 {
@@ -1697,7 +1697,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-12T09:03:27+00:00"
+            "time": "2022-01-14T08:19:22+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -4655,16 +4655,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v2.0.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "3dbfa5c4e3308fd9def9a2006a20fa0c272a30a2"
+                "reference": "82891fd872056499ce7a7c4aca7ffeb86a341878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/3dbfa5c4e3308fd9def9a2006a20fa0c272a30a2",
-                "reference": "3dbfa5c4e3308fd9def9a2006a20fa0c272a30a2",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/82891fd872056499ce7a7c4aca7ffeb86a341878",
+                "reference": "82891fd872056499ce7a7c4aca7ffeb86a341878",
                 "shasum": ""
             },
             "require": {
@@ -4700,7 +4700,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v2.0.1"
+                "source": "https://github.com/symfony/flex/tree/v2.1.2"
             },
             "funding": [
                 {
@@ -4716,7 +4716,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-29T15:40:20+00:00"
+            "time": "2022-01-19T17:52:43+00:00"
         },
         {
             "name": "symfony/form",
@@ -8392,6 +8392,46 @@
             "time": "2021-12-08T15:13:44+00:00"
         },
         {
+            "name": "symfony/webapp-meta",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/webapp-meta.git",
+                "reference": "df062f539ed5203b8ba1e5cdd9b1745afa983d69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/webapp-meta/zipball/df062f539ed5203b8ba1e5cdd9b1745afa983d69",
+                "reference": "df062f539ed5203b8ba1e5cdd9b1745afa983d69",
+                "shasum": ""
+            },
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A meta package for the web app pack",
+            "support": {
+                "issues": "https://github.com/symfony/webapp-meta/issues",
+                "source": "https://github.com/symfony/webapp-meta/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-20T16:02:05+00:00"
+        },
+        {
             "name": "symfony/webpack-encore-bundle",
             "version": "v1.13.2",
             "source": {
@@ -8945,16 +8985,16 @@
     "packages-dev": [
         {
             "name": "doctrine/data-fixtures",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "f18adf13f6c81c67a88360dca359ad474523f8e3"
+                "reference": "51c1890e8c5467c421c7cab4579f059ebf720278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/f18adf13f6c81c67a88360dca359ad474523f8e3",
-                "reference": "f18adf13f6c81c67a88360dca359ad474523f8e3",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/51c1890e8c5467c421c7cab4579f059ebf720278",
+                "reference": "51c1890e8c5467c421c7cab4579f059ebf720278",
                 "shasum": ""
             },
             "require": {
@@ -8963,15 +9003,20 @@
                 "php": "^7.2 || ^8.0"
             },
             "conflict": {
+                "doctrine/dbal": "<2.13",
                 "doctrine/phpcr-odm": "<1.3.0"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^9.0",
-                "doctrine/dbal": "^2.5.4 || ^3.0",
+                "doctrine/dbal": "^2.13 || ^3.0",
                 "doctrine/mongodb-odm": "^1.3.0 || ^2.0.0",
                 "doctrine/orm": "^2.7.0",
                 "ext-sqlite3": "*",
-                "phpunit/phpunit": "^8.0"
+                "jangregor/phpstan-prophecy": "^0.8.1",
+                "phpstan/phpstan": "^0.12.99",
+                "phpunit/phpunit": "^8.0",
+                "symfony/cache": "^5.0 || ^6.0",
+                "vimeo/psalm": "^4.10"
             },
             "suggest": {
                 "alcaeus/mongo-php-adapter": "For using MongoDB ODM 1.3 with PHP 7 (deprecated)",
@@ -8996,13 +9041,13 @@
                 }
             ],
             "description": "Data Fixtures for all Doctrine Object Managers",
-            "homepage": "http://www.doctrine-project.org",
+            "homepage": "https://www.doctrine-project.org",
             "keywords": [
                 "database"
             ],
             "support": {
                 "issues": "https://github.com/doctrine/data-fixtures/issues",
-                "source": "https://github.com/doctrine/data-fixtures/tree/1.5.1"
+                "source": "https://github.com/doctrine/data-fixtures/tree/1.5.2"
             },
             "funding": [
                 {
@@ -9018,7 +9063,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-20T21:51:43+00:00"
+            "time": "2022-01-20T17:10:56+00:00"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -9105,16 +9150,16 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.17.0",
+            "version": "v1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "b85e9d44eae8c52cca7aa0939483611f7232b669"
+                "reference": "2e77a868f6540695cf5ebf21e5ab472c65f47567"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/b85e9d44eae8c52cca7aa0939483611f7232b669",
-                "reference": "b85e9d44eae8c52cca7aa0939483611f7232b669",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/2e77a868f6540695cf5ebf21e5ab472c65f47567",
+                "reference": "2e77a868f6540695cf5ebf21e5ab472c65f47567",
                 "shasum": ""
             },
             "require": {
@@ -9139,7 +9184,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "v1.17-dev"
+                    "dev-main": "v1.18-dev"
                 }
             },
             "autoload": {
@@ -9164,9 +9209,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.17.0"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.18.0"
             },
-            "time": "2021-12-05T17:14:47+00:00"
+            "time": "2022-01-23T17:56:23+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -9780,16 +9825,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.11",
+            "version": "9.5.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2406855036db1102126125537adb1406f7242fdd"
+                "reference": "597cb647654ede35e43b137926dfdfef0fb11743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2406855036db1102126125537adb1406f7242fdd",
-                "reference": "2406855036db1102126125537adb1406f7242fdd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/597cb647654ede35e43b137926dfdfef0fb11743",
+                "reference": "597cb647654ede35e43b137926dfdfef0fb11743",
                 "shasum": ""
             },
             "require": {
@@ -9867,7 +9912,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.11"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.13"
             },
             "funding": [
                 {
@@ -9879,7 +9924,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-25T07:07:57+00:00"
+            "time": "2022-01-24T07:33:35+00:00"
         },
         {
             "name": "sebastian/cli-parser",
