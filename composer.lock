@@ -66,16 +66,16 @@
         },
         {
             "name": "arkounay/quick-admin-generator-bundle",
-            "version": "3.2.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arkounay/QuickAdminGeneratorBundle.git",
-                "reference": "3179f7ff519d01e85f261ecaf2f033b4966dfe8b"
+                "reference": "58457c4f722f797d117badbd3aede956e6665987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arkounay/QuickAdminGeneratorBundle/zipball/3179f7ff519d01e85f261ecaf2f033b4966dfe8b",
-                "reference": "3179f7ff519d01e85f261ecaf2f033b4966dfe8b",
+                "url": "https://api.github.com/repos/Arkounay/QuickAdminGeneratorBundle/zipball/58457c4f722f797d117badbd3aede956e6665987",
+                "reference": "58457c4f722f797d117badbd3aede956e6665987",
                 "shasum": ""
             },
             "require": {
@@ -141,9 +141,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Arkounay/QuickAdminGeneratorBundle/issues",
-                "source": "https://github.com/Arkounay/QuickAdminGeneratorBundle/tree/3.2.0"
+                "source": "https://github.com/Arkounay/QuickAdminGeneratorBundle/tree/3.3.1"
             },
-            "time": "2022-02-08T10:55:11+00:00"
+            "time": "2022-02-08T13:23:48+00:00"
         },
         {
             "name": "arkounay/ux-collection",
