@@ -82,8 +82,6 @@ class ImageExtension extends AbstractExtension
             $path = urldecode(mb_substr($path, 1));
         }
 
-        dump($path);
-
         return $this->imageHandling->open($path);
     }
 
