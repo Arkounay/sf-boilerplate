@@ -1,3 +1,6 @@
 arkounay_quick_admin_generator:
     title: '%project_name%'
     #dashboard_route_redirection: 'qag.news'
+when@dev:
+    arkounay_quick_admin_generator:
+        allow_form_resubmit: true
