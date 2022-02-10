@@ -5,6 +5,9 @@
     "arkounay/quick-admin-generator-bundle": {
         "version": "3.0.0"
     },
+    "arkounay/twig-copy-location-bundle": {
+        "version": "1.1.5"
+    },
     "arkounay/ux-collection": {
         "version": "2.0.0"
     },
@@ -361,6 +364,9 @@
             "config/packages/dev/debug.yaml"
         ]
     },
+    "symfony/debug-pack": {
+        "version": "v1.0.10"
+    },
     "symfony/dependency-injection": {
         "version": "v6.0.2"
     },
@@ -538,6 +544,9 @@
     },
     "symfony/process": {
         "version": "v6.0.2"
+    },
+    "symfony/profiler-pack": {
+        "version": "v1.0.6"
     },
     "symfony/property-access": {
         "version": "v6.0.2"

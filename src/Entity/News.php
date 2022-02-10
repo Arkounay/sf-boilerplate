@@ -64,7 +64,7 @@ class News
         return $this->startDate;
     }
 
-    public function setStartDate(?DateTime $startDate): News
+    public function setStartDate(?DateTime $startDate): self
     {
         $this->startDate = $startDate;
         return $this;
@@ -75,7 +75,7 @@ class News
         return $this->endDate;
     }
 
-    public function setEndDate(?DateTime $endDate): News
+    public function setEndDate(?DateTime $endDate): self
     {
         $this->endDate = $endDate;
         return $this;
@@ -86,7 +86,7 @@ class News
         return $this->title;
     }
 
-    public function setTitle(?string $title): News
+    public function setTitle(?string $title): self
     {
         $this->title = $title;
         return $this;
@@ -97,7 +97,7 @@ class News
         return $this->content;
     }
 
-    public function setContent(?string $content): News
+    public function setContent(?string $content): self
     {
         $this->content = $content;
         return $this;
@@ -108,7 +108,7 @@ class News
         return $this->image;
     }
 
-    public function setImage(?string $image): News
+    public function setImage(?string $image): self
     {
         $this->image = $image;
         return $this;
@@ -119,7 +119,7 @@ class News
         return $this->slug;
     }
 
-    public function setSlug(string $slug): News
+    public function setSlug(string $slug): self
     {
         $this->slug = $slug;
         return $this;
