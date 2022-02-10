@@ -16,7 +16,6 @@ class Contact
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    #[QAG\Ignore]
     private ?int $id = null;
 
     #[ORM\Column(length: 120)]
