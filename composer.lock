@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ecffd64aa6191584aeac7cd4af4af30",
+    "content-hash": "c6bd9e937ceb244372f927a8b779f549",
     "packages": [
         {
             "name": "arkounay/gregwar-image-bundle",
@@ -8985,6 +8985,56 @@
     ],
     "packages-dev": [
         {
+            "name": "arkounay/twig-copy-location-bundle",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Arkounay/twig-copy-location-bundle.git",
+                "reference": "1039fedd8b4a7f90477545964774f8aeb8d08c98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Arkounay/twig-copy-location-bundle/zipball/1039fedd8b4a7f90477545964774f8aeb8d08c98",
+                "reference": "1039fedd8b4a7f90477545964774f8aeb8d08c98",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0",
+                "symfony/debug-pack": "*",
+                "twig/twig": "^2.12|^3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Arkounay\\Bundle\\TwigCopyLocationBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antonin M",
+                    "email": "arkanen@gmail.com"
+                }
+            ],
+            "description": "Adds copiable twig filename in the debug toolbar",
+            "homepage": "https://github.com/arkounay/twig-copy-location-bundle",
+            "keywords": [
+                "bundle",
+                "copy",
+                "debug",
+                "symfony",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/Arkounay/twig-copy-location-bundle/issues",
+                "source": "https://github.com/Arkounay/twig-copy-location-bundle/tree/1.1.5"
+            },
+            "time": "2020-07-13T08:55:41+00:00"
+        },
+        {
             "name": "doctrine/data-fixtures",
             "version": "1.5.2",
             "source": {
@@ -11043,6 +11093,55 @@
             "time": "2022-01-02T09:55:41+00:00"
         },
         {
+            "name": "symfony/debug-pack",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug-pack.git",
+                "reference": "98ef3cb02f9adb54b98d8bc95c84b896513a51d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug-pack/zipball/98ef3cb02f9adb54b98d8bc95c84b896513a51d5",
+                "reference": "98ef3cb02f9adb54b98d8bc95c84b896513a51d5",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/debug-bundle": "*",
+                "symfony/monolog-bundle": "^3.0",
+                "symfony/profiler-pack": "*"
+            },
+            "require-dev": {
+                "symfony/debug-bundle": "*",
+                "symfony/profiler-pack": "*"
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A debug pack for Symfony projects",
+            "support": {
+                "issues": "https://github.com/symfony/debug-pack/issues",
+                "source": "https://github.com/symfony/debug-pack/tree/v1.0.10"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-20T17:29:57+00:00"
+        },
+        {
             "name": "symfony/dom-crawler",
             "version": "v6.0.3",
             "source": {
@@ -11285,6 +11384,54 @@
                 }
             ],
             "time": "2022-01-26T17:23:29+00:00"
+        },
+        {
+            "name": "symfony/profiler-pack",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/profiler-pack.git",
+                "reference": "bcd6e80af9819454ac18594362e7875fd1d771c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/profiler-pack/zipball/bcd6e80af9819454ac18594362e7875fd1d771c7",
+                "reference": "bcd6e80af9819454ac18594362e7875fd1d771c7",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/stopwatch": "*",
+                "symfony/web-profiler-bundle": "*"
+            },
+            "require-dev": {
+                "symfony/stopwatch": "*",
+                "symfony/web-profiler-bundle": "*"
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for the Symfony web profiler",
+            "support": {
+                "issues": "https://github.com/symfony/profiler-pack/issues",
+                "source": "https://github.com/symfony/profiler-pack/tree/v1.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-20T17:27:58+00:00"
         },
         {
             "name": "symfony/web-profiler-bundle",
