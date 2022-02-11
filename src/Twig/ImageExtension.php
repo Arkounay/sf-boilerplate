@@ -24,9 +24,9 @@ class ImageExtension extends AbstractExtension
     {
         return [
             new TwigFunction('gImage', [$this, 'image'], ['is_safe' => ['html']]),
-            new TwigFunction('resize_image', [$this, 'resizeImage'], ['is_safe' => ['html']]),
-            new TwigFunction('zoom_crop_image', [$this, 'zoomCropImage'], ['is_safe' => ['html']]),
-            new TwigFunction('image_size', [$this, 'getImageSize'])
+            new TwigFunction('image_resize', [$this, 'resizeImage'], ['is_safe' => ['html']]),
+            new TwigFunction('image_zoom_crop', [$this, 'zoomCropImage'], ['is_safe' => ['html']]),
+            new TwigFunction('image_get_size', [$this, 'getImageSize'])
         ];
     }
 

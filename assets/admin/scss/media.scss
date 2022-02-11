@@ -3,4 +3,10 @@
     width: 24px;
     height: 24px;
   }
+  margin-bottom: 20px !important;
+
+  &+ .invalid-feedback {
+    margin-top: -15px;
+    margin-bottom: 5px;
+  }
 }
