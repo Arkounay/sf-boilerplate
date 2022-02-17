@@ -29,6 +29,5 @@ yarn-error.log
 npm-debug.log
 .idea
 /bin/livereload/index.js
-/bin/browser-sync/index.js
 /public/admin/build/
 /public/cache/
