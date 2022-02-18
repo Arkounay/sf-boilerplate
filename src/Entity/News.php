@@ -18,7 +18,7 @@ class News
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private int $id;
+    private ?int $id = null;
 
     #[ORM\Column(type: 'string', nullable: true)]
     #[Assert\Length(max: 255)]
