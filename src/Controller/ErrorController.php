@@ -31,7 +31,7 @@ class ErrorController extends AbstractController
     {
         $twig = '@Twig/Exception/error.html.twig';
 
-        if (str_starts_with($request->getRequestUri(), '/admin')) {
+        if (str_starts_with($request->getRequestUri(), '/admin') && $this->isGranted('ROLE_ADMIN')) {
             $twig = '@ArkounayQuickAdminGenerator/error.html.twig';
         }
 
