@@ -2,9 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
+        {# Sharing #}
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Mydésembouage"/>
+        {# Todo Description de partage #}
+        <meta property="og:description" content=""/>
+        <meta property="og:url" content="{{ app.request.uri }}"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        {# Todo Image de partage #}
+        {# <meta property="og:image" content="{{ absolute_url(asset('images/')) }}"/>#}
+
+        {# Todo Description #}
+        <meta name="description" content="{% block description page('seo').description|default %}"/>
+
+        <meta name="robots" content="noindex, nofollow">
+
+        <title>{% block title %}%project_name%{% endblock %}</title>
+
+        {% block fonts %}
+        {% endblock %}
+
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
