@@ -121,8 +121,7 @@ export default class extends Controller {
                 Object.assign(options, {forced_root_block: false})
                 break;
         }
-
-        if (this.tmpFix !== undefined) {
+        if (this.tmpFix !== undefined && this.previousId === this.element.id) {
             this.element.name = this.tmpFix;
         }
         tinymce.init(options);
@@ -131,7 +130,8 @@ export default class extends Controller {
     disconnect() {
         if (this.editor !== undefined) {
             this.tmpFix = this.element.name;
-            this.editor.remove();
+            this.previousId = this.element.id;
+            this.editor.destroy();
         }
     }
 
