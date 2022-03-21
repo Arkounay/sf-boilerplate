@@ -122,11 +122,15 @@ export default class extends Controller {
                 break;
         }
 
+        if (this.tmpFix !== undefined) {
+            this.element.name = this.tmpFix;
+        }
         tinymce.init(options);
     }
 
     disconnect() {
         if (this.editor !== undefined) {
+            this.tmpFix = this.element.name;
             this.editor.remove();
         }
     }
