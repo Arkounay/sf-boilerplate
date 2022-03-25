@@ -99,13 +99,6 @@ export default class extends Controller {
                 this.editor = editor;
                 editor.on('focus', function() {
                     $(editor.contentAreaContainer.offsetParent).addClass('focus');
-                    let elementsThatMayHaveFlatpickr = $('.flatpickr-input');
-                    elementsThatMayHaveFlatpickr.each(function(i, el) {
-                        let fp = el._flatpickr;
-                        if (fp) {
-                            fp.close();
-                        }
-                    });
                 });
                 editor.on('blur', function() {
                     $(editor.contentAreaContainer.offsetParent).removeClass('focus');
