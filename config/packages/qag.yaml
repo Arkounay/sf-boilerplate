@@ -1,5 +1,5 @@
 arkounay_quick_admin_generator:
-    title: '%project_name%'
+    title: '__project_name__'
     #dashboard_route_redirection: 'qag.news'
     theme:
         default: 'light'
