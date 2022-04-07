@@ -20,7 +20,7 @@ class News
     #[ORM\Column(type: 'integer')]
     private ?int $id = null;
 
-    #[ORM\Column(type: 'string', nullable: true)]
+    #[ORM\Column(type: 'string')]
     #[Assert\Length(max: 255)]
     #[MediaAssert\Image]
     private ?string $image;

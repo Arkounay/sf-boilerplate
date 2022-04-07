@@ -32,10 +32,10 @@ class FormImagesListener implements EventSubscriberInterface
 
         if (self::IsImages($field)) {
             /** @var FormBuilderInterface $formBuilder */
-            $formBuilder->add($field->getIndex(), UxMediaCollectionType::class, [
+            $formBuilder->add($field->getIndex(), UxMediaCollectionType::class, array_merge($field->guessFormOptions(), [
                 'required' => false,
                 'conf' => 'default'
-            ]);
+            ]));
             $event->stopPropagation();
         }
     }
@@ -54,7 +54,7 @@ class FormImagesListener implements EventSubscriberInterface
 
     private static function IsImages(Field $field): bool
     {
-        return ($field->getIndex() === 'images' || $field->getIndex() === 'gallery') && $field->getType() === 'simple_array';
+        return (stripos($field->getIndex(), 'images') !== false || stripos($field->getIndex(), 'gallery') !== false) && $field->getType() === 'simple_array';
     }
 
 

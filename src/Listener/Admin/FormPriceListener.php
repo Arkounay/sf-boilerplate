@@ -52,7 +52,7 @@ class FormPriceListener implements EventSubscriberInterface
 
     private static function IsPrice(Field $field): bool
     {
-        return $field->getIndex() === 'price' && $field->getType() === 'decimal';
+        return stripos($field->getIndex(), 'price') !== false && $field->getType() === 'decimal';
     }
 
 
