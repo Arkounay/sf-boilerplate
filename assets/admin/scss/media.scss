@@ -19,4 +19,8 @@
     height: 30px;
     width: 40px;
   }
+
+  &.error {
+    border-color: #d63939 !important;
+  }
 }

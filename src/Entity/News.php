@@ -22,6 +22,7 @@ class News
 
     #[ORM\Column(type: 'string')]
     #[Assert\Length(max: 255)]
+    #[Assert\NotBlank]
     #[MediaAssert\Image]
     private ?string $image;
 
