@@ -1,9 +1,5 @@
 {% extends '@!ArkounayQuickAdminGenerator/form/form_theme.html.twig' %}
 
-{% block ux_media_row %}
-    {{ form_row(form) }}
-{% endblock %}
-
 {% block seo_widget %}
     <div {{ stimulus_controller('input_text_count', {maxCharCount: '60'}) }}>
         {{ form_row(form.title, {attr: {'data-action': 'keyup->input-text-count#updateText', 'data-input-text-count-target': 'input'}, row_attr: {class: 'mb-0'}}) }}
