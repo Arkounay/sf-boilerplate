@@ -14,7 +14,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 class FormImageListener implements EventSubscriberInterface
 {
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             'qag.events.form.field' => 'formEvent',

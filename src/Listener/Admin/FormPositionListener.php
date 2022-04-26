@@ -11,7 +11,7 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 class FormPositionListener implements EventSubscriberInterface
 {
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             'qag.events.field_generation' => 'fieldGenerationEvent'

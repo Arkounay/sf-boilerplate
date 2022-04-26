@@ -20,7 +20,7 @@ class ImageExtension extends AbstractExtension
     /**
      * {@inheritdoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('gImage', [$this, 'image'], ['is_safe' => ['html']]),
@@ -33,7 +33,7 @@ class ImageExtension extends AbstractExtension
     /**
      * {@inheritdoc}
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter('alt', [$this, 'generateImageAltFromPath']),
