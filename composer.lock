@@ -66,16 +66,16 @@
         },
         {
             "name": "arkounay/quick-admin-generator-bundle",
-            "version": "3.9.2",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arkounay/QuickAdminGeneratorBundle.git",
-                "reference": "ba9329e549b37b32911563ad9dd1e9f14fcea231"
+                "reference": "3b42453d5f2f47308b48cabad6ccf6829f4deff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arkounay/QuickAdminGeneratorBundle/zipball/ba9329e549b37b32911563ad9dd1e9f14fcea231",
-                "reference": "ba9329e549b37b32911563ad9dd1e9f14fcea231",
+                "url": "https://api.github.com/repos/Arkounay/QuickAdminGeneratorBundle/zipball/3b42453d5f2f47308b48cabad6ccf6829f4deff2",
+                "reference": "3b42453d5f2f47308b48cabad6ccf6829f4deff2",
                 "shasum": ""
             },
             "require": {
@@ -142,9 +142,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Arkounay/QuickAdminGeneratorBundle/issues",
-                "source": "https://github.com/Arkounay/QuickAdminGeneratorBundle/tree/3.9.2"
+                "source": "https://github.com/Arkounay/QuickAdminGeneratorBundle/tree/3.10.0"
             },
-            "time": "2022-04-25T09:02:31+00:00"
+            "time": "2022-04-27T13:18:54+00:00"
         },
         {
             "name": "arkounay/ux-collection",
@@ -197,16 +197,16 @@
         },
         {
             "name": "arkounay/ux-media",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arkounay/ux-media.git",
-                "reference": "f0ae265d86447b3eeb71151ccb07e15b0dc376c0"
+                "reference": "3aef37a69a05f2e06f3ad053032fdbff5ea195d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arkounay/ux-media/zipball/f0ae265d86447b3eeb71151ccb07e15b0dc376c0",
-                "reference": "f0ae265d86447b3eeb71151ccb07e15b0dc376c0",
+                "url": "https://api.github.com/repos/Arkounay/ux-media/zipball/3aef37a69a05f2e06f3ad053032fdbff5ea195d7",
+                "reference": "3aef37a69a05f2e06f3ad053032fdbff5ea195d7",
                 "shasum": ""
             },
             "require": {
@@ -244,9 +244,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Arkounay/ux-media/issues",
-                "source": "https://github.com/Arkounay/ux-media/tree/2.2.2"
+                "source": "https://github.com/Arkounay/ux-media/tree/2.2.3"
             },
-            "time": "2022-04-26T14:45:08+00:00"
+            "time": "2022-04-27T13:35:58+00:00"
         },
         {
             "name": "artgris/filemanager-bundle",
