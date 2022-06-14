@@ -24,4 +24,5 @@ return [
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
     Gregwar\ImageBundle\GregwarImageBundle::class => ['all' => true],
     Arkounay\Bundle\TwigCopyLocationBundle\ArkounayTwigCopyLocationBundle::class => ['dev' => true, 'test' => true],
+    Nucleos\AntiSpamBundle\NucleosAntiSpamBundle::class => ['all' => true],
 ];

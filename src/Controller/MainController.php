@@ -25,7 +25,14 @@ class MainController extends AbstractController
     public function contact(Request $request, EntityManagerInterface $em, MailingService $mailingService): Response
     {
         $contact = new Contact();
-        $form = $this->createForm(ContactType::class, $contact);
+        $form = $this->createForm(ContactType::class, $contact, [
+            'antispam_time' => true,
+            'antispam_time_min' => 10,
+            'antispam_time_max' => 3600,
+            'antispam_honeypot' => true,
+            'antispam_honeypot_class' => 'd-none',
+            'antispam_honeypot_field' => 'email-repeat',
+        ]);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
