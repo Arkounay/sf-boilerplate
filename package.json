@@ -29,6 +29,6 @@
         "admin-build": "encore production --config webpack.admin.config.js"
     },
     "dependencies": {
-        "tinymce": "^5.10.2"
+        "tinymce": "^6"
     }
 }

@@ -1,12 +1,11 @@
 import { Controller } from '@hotwired/stimulus';
-import tinymce from 'tinymce/tinymce';
+import tinymce from 'tinymce';
 import 'tinymce/plugins/advlist';
 import 'tinymce/plugins/autolink';
 import 'tinymce/plugins/link';
 import 'tinymce/plugins/image';
 import 'tinymce/plugins/lists';
 import 'tinymce/plugins/charmap';
-import 'tinymce/plugins/hr';
 import 'tinymce/plugins/anchor';
 import 'tinymce/plugins/emoticons';
 import 'tinymce/plugins/emoticons/js/emojis';
@@ -14,15 +13,13 @@ import 'tinymce/plugins/code';
 import 'tinymce/plugins/fullscreen';
 import 'tinymce/plugins/media';
 import 'tinymce/plugins/nonbreaking';
-import 'tinymce/plugins/contextmenu';
 import 'tinymce/plugins/directionality';
-import 'tinymce/plugins/paste';
-import 'tinymce/plugins/textcolor';
 import 'tinymce/plugins/autoresize';
 import 'tinymce/themes/silver';
+import 'tinymce/models/dom';
 import '../tinymce/tinymce_fr';
 import 'tinymce/icons/default';
-import 'tinymce/skins/ui/oxide/skin.min.css';
+import 'tinymce/skins/ui/tinymce-5/skin.min.css';
 
 export default class extends Controller {
 
@@ -38,7 +35,7 @@ export default class extends Controller {
                 cmsURL = cmsURL + "&type=" + type;
             }
 
-            const windowManagerCSS = '<style type="text/css">' +
+            const windowManagerCSS = '<style>' +
                 '.tox-dialog {max-width: 100%!important; width:97.5%!important; overflow: hidden; height:95%!important; border-radius:0.25em;}' +
                 '.tox-dialog__body { padding: 0!important; }' +
                 '.tox .tox-dialog__body-content { max-height: none; }' +
@@ -55,12 +52,12 @@ export default class extends Controller {
                     type: 'panel',
                     items: [{
                         type: 'htmlpanel',
-                        html: windowManagerCSS + '<iframe src="' + cmsURL + '"  frameborder="0" style="width:100%; height:100%"></iframe>'
+                        html: windowManagerCSS + '<iframe src="' + cmsURL + '" style="width:100%; height:100%"></iframe>'
                     }]
                 },
                 buttons: [],
                 onClose: function () {
-                    if (tinymceCallBackURL != '')
+                    if (tinymceCallBackURL !== '')
                         callback(encodeURI(tinymceCallBackURL), {}); //to set selected file path
                 }
             });
@@ -71,12 +68,12 @@ export default class extends Controller {
         let options = {
             target: this.element,
             skin: false,
-            plugins: 'advlist autolink link emoticons image lists charmap hr anchor code fullscreen media nonbreaking autoresize directionality paste',
+            plugins: 'advlist autolink link emoticons image lists charmap anchor code fullscreen media nonbreaking autoresize directionality',
             convert_urls: false,
             width: "auto",
             statusbar: false,
             image_dimensions: false,
-            toolbar: "undo redo | emoticons | bold italic | backcolor forecolor | alignleft aligncenter alignright alignjustify | bullist numlist | link image  | removeformat | code", // styleselect
+            toolbar: "undo redo | emoticons | bold italic | forecolor | alignleft aligncenter alignright alignjustify | bullist numlist | link image  | removeformat | code", // styleselect
             extended_valid_elements: "div[*],meta[*],span[*]",
             menubar: false,
             min_height: 200,
