@@ -10,7 +10,7 @@ set project_name [ProjectName] \
 && rm -rf .git \
 && rm README.md \
 && nvm use lts && node -v > .nvmrc \
-&& yarn && yarn dev && yarn admin-dev \
+&& npm install && npm run dev && npm run admin-dev \
 && php bin/console d:d:c \
 && php bin/console d:s:u --force \
 && php bin/console d:f:l -n
