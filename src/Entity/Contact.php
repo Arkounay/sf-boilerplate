@@ -2,9 +2,6 @@
 
 namespace App\Entity;
 
-use App\Entity\Enum\ContactSubjectType;
-use App\Entity\Enum\ContactType;
-use App\Form\EnumType;
 use App\Repository\ContactRepository;
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
 use Doctrine\ORM\Mapping as ORM;
@@ -21,12 +18,12 @@ class Contact
     #[ORM\Column(length: 120)]
     #[Assert\NotBlank]
     #[Assert\Length(max: 120)]
-    private ?string $firstname = null;
+    private ?string $firstName = null;
 
     #[ORM\Column(length: 120)]
     #[Assert\NotBlank]
     #[Assert\Length(max: 120)]
-    private ?string $lastname = null;
+    private ?string $lastName = null;
 
     #[ORM\Column]
     #[Assert\NotBlank]
@@ -53,25 +50,25 @@ class Contact
         return $this->id;
     }
 
-    public function getFirstname(): ?string
+    public function getFirstName(): ?string
     {
-        return $this->firstname;
+        return $this->firstName;
     }
 
-    public function setFirstname(?string $firstname): self
+    public function setFirstName(?string $firstName): self
     {
-        $this->firstname = $firstname;
+        $this->firstName = $firstName;
         return $this;
     }
 
-    public function getLastname(): ?string
+    public function getLastName(): ?string
     {
-        return $this->lastname;
+        return $this->lastName;
     }
 
-    public function setLastname(?string $lastname): self
+    public function setLastName(?string $lastName): self
     {
-        $this->lastname = $lastname;
+        $this->lastName = $lastName;
         return $this;
     }
 
@@ -110,7 +107,7 @@ class Contact
 
     public function __toString(): string
     {
-        return "{$this->getFirstname()} {$this->getLastname()}";
+        return "{$this->getFirstName()} {$this->getLastName()}";
     }
 
 }

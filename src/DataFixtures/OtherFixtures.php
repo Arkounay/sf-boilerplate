@@ -15,8 +15,8 @@ class OtherFixtures extends Fixture
 
         for ($i = 0; $i < 2; $i++) {
             $contact = (new Contact())
-                ->setFirstname($faker->firstName)
-                ->setLastname($faker->firstName)
+                ->setFirstName($faker->firstName)
+                ->setLastName($faker->firstName)
                 ->setEmail($faker->email)
                 ->setMessage($faker->text);
             $manager->persist($contact);

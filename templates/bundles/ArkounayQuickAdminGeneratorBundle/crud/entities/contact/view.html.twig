@@ -1,7 +1,7 @@
 {% extends '@ArkounayQuickAdminGenerator/crud/view.html.twig' %}
 
 {% block action_name %}
-    {{ entity.firstname }} {{ entity.lastname}}
+    {{ entity }}
 {% endblock %}
 
 {% block fields %}
@@ -16,11 +16,11 @@
     </tr>
     <tr>
         <th>Prénom</th>
-        <td>{{ contact.firstname }}</td>
+        <td>{{ contact.firstName }}</td>
     </tr>
     <tr>
         <th>Nom</th>
-        <td>{{ contact.lastname }}</td>
+        <td>{{ contact.lastName }}</td>
     </tr>
     <tr>
         <th>E-mail</th>
