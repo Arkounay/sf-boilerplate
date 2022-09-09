@@ -2,9 +2,7 @@
 
 {% block action_name entity %}
 
-{% block fields %}
-    {{ _self.render_fields(entity) }}
-{% endblock %}
+{% block fields _self.render_fields(entity) %}
 
 {% macro render_fields(contact) %}
     {# contact \App\Entity\Contact #}
