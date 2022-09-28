@@ -9,7 +9,7 @@
         "ext-iconv": "*",
         "arkounay/gregwar-image-bundle": "^4.0",
         "arkounay/quick-admin-generator-bundle": "^3.0",
-        "arkounay/ux-media": "^2.1",
+        "arkounay/ux-media": "^3.0",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.6",
         "doctrine/doctrine-migrations-bundle": "^3.2",
