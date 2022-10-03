@@ -10,7 +10,7 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 class PageSubscriber implements EventSubscriberInterface
 {
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             'pagebundle.add_field' => 'addField',
