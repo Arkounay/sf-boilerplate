@@ -1,17 +1,15 @@
 <?php
 
 
-namespace App\Listener\Admin;
-
+namespace App\Event\Admin;
 
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Field;
-use Arkounay\Bundle\UxMediaBundle\Form\UxMediaType;
-use Artgris\Bundle\MediaBundle\Form\Type\MediaType;
+use Arkounay\Bundle\UxMediaBundle\Form\UxMediaCollectionType;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class FormImageListener implements EventSubscriberInterface
+class FormImagesSubscriber implements EventSubscriberInterface
 {
 
     public static function getSubscribedEvents(): array
@@ -29,9 +27,10 @@ class FormImageListener implements EventSubscriberInterface
         /** @var Field $field */
         $field = $event->getArgument('field');
 
-        if (self::IsImage($field)) {
+        if (self::IsImages($field)) {
             /** @var FormBuilderInterface $formBuilder */
-            $formBuilder->add($field->getIndex(), UxMediaType::class, array_merge($field->guessFormOptions(), [
+            $formBuilder->add($field->getIndex(), UxMediaCollectionType::class, array_merge($field->guessFormOptions(), [
+                'required' => false,
                 'conf' => 'default'
             ]));
             $event->stopPropagation();
@@ -44,15 +43,15 @@ class FormImageListener implements EventSubscriberInterface
         /** @var Field $field */
         $field = $event->getSubject();
 
-        if (self::IsImage($field)) {
-            $field->setTwig('@ArkounayQuickAdminGenerator/crud/fields/_image.html.twig');
+        if (self::IsImages($field)) {
+            $field->setTwig('@ArkounayQuickAdminGenerator/crud/fields/_images.html.twig');
             $field->setSortable(false);
         }
     }
 
-    private static function IsImage(Field $field): bool
+    private static function IsImages(Field $field): bool
     {
-        return stripos($field->getIndex(), 'image') !== false && $field->getType() === 'string';
+        return (stripos($field->getIndex(), 'images') !== false || stripos($field->getIndex(), 'gallery') !== false) && $field->getType() === 'simple_array';
     }
 
 

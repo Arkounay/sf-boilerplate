@@ -1,17 +1,15 @@
 <?php
 
 
-namespace App\Listener\Admin;
-
+namespace App\Event\Admin;
 
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Field;
-use Artgris\Bundle\MediaBundle\Form\Type\MediaType;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class FormPriceListener implements EventSubscriberInterface
+class FormPriceSubscriber implements EventSubscriberInterface
 {
 
     public static function getSubscribedEvents(): array

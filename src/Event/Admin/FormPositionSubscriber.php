@@ -1,14 +1,13 @@
 <?php
 
 
-namespace App\Listener\Admin;
-
+namespace App\Event\Admin;
 
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Field;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
 
-class FormPositionListener implements EventSubscriberInterface
+class FormPositionSubscriber implements EventSubscriberInterface
 {
 
     public static function getSubscribedEvents(): array

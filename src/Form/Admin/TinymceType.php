@@ -12,7 +12,7 @@ class TinymceType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'attr' => ['data-controller' => 'tinymce', 'data-tinymce-trigger-change-value' => true]
+            'attr' => ['data-controller' => 'tinymce', 'data-tinymce-trigger-change-value' => false]
         ]);
     }
 

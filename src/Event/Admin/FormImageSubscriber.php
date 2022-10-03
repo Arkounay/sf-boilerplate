@@ -1,15 +1,15 @@
 <?php
 
 
-namespace App\Listener\Admin;
+namespace App\Event\Admin;
 
-
-use App\Form\Admin\TinymceType;
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Field;
+use Arkounay\Bundle\UxMediaBundle\Form\UxMediaType;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
+use Symfony\Component\Form\FormBuilderInterface;
 
-class FormTinymceListener implements EventSubscriberInterface
+class FormImageSubscriber implements EventSubscriberInterface
 {
 
     public static function getSubscribedEvents(): array
@@ -27,9 +27,10 @@ class FormTinymceListener implements EventSubscriberInterface
         /** @var Field $field */
         $field = $event->getArgument('field');
 
-        if (self::IsTiny($field)) {
-            $formBuilder->add($field->getIndex(), $field->getFormType(), array_merge($field->guessFormOptions(), [
-                'attr' => ['data-controller' => 'tinymce', 'data-tinymce-trigger-change-value' => false]
+        if (self::IsImage($field)) {
+            /** @var FormBuilderInterface $formBuilder */
+            $formBuilder->add($field->getIndex(), UxMediaType::class, array_merge($field->guessFormOptions(), [
+                'conf' => 'default'
             ]));
             $event->stopPropagation();
         }
@@ -41,15 +42,15 @@ class FormTinymceListener implements EventSubscriberInterface
         /** @var Field $field */
         $field = $event->getSubject();
 
-        if (self::IsTiny($field)) {
+        if (self::IsImage($field)) {
+            $field->setTwig('@ArkounayQuickAdminGenerator/crud/fields/_image.html.twig');
             $field->setSortable(false);
-            $field->setDisplayedInList(false);
         }
     }
 
-    private static function IsTiny(Field $field): bool
+    private static function IsImage(Field $field): bool
     {
-        return $field->getFormType() === TinymceType::class;
+        return stripos($field->getIndex(), 'image') !== false && $field->getType() === 'string';
     }
 
 
