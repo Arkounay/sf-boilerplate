@@ -23,6 +23,11 @@ import 'tinymce/skins/ui/tinymce-5/skin.min.css';
 
 export default class extends Controller {
 
+    static values = {
+        triggerChange: Boolean,
+        type: String
+    }
+
     connect() {
         function fileBrowser(callback, value, meta) {
 
@@ -100,10 +105,20 @@ export default class extends Controller {
                 editor.on('blur', function() {
                     $(editor.contentAreaContainer.offsetParent).removeClass('focus');
                 });
+                if (this.triggerChangeValue) {
+                    editor.on('change', () => {
+                        tinymce.triggerSave();
+                        this.element.dispatchEvent(new Event('change'));
+                    })
+                    editor.on('keyup', () => {
+                        tinymce.triggerSave();
+                        this.element.dispatchEvent(new Event('keyup'));
+                    })
+                }
             },
         };
 
-        switch (this.element.dataset.tinymceType) {
+        switch (this.typeValue) {
             case 'large':
                 Object.assign(options, {min_height: 500, autoresize_overflow_padding: 25, autoresize_bottom_margin: 0});
                 break;
