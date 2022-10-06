@@ -1,3 +1,5 @@
+# My boilerplate for new symfony 6 projects
+
 Fish shell:
 ```fish
 set project_name [ProjectName] \
