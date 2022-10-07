@@ -1,6 +1,6 @@
 # My boilerplate for new symfony 6 projects
 
-Fish shell:
+Fish shell, replace `[ProjectName]`:
 ```fish
 set project_name [ProjectName] \
 && set app_secret (tr -dc A-Za-z0-9 </dev/urandom | head -c 32 | string lower) \
