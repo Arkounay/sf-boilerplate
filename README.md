@@ -3,7 +3,7 @@
 Fish shell, replace `[ProjectName]`:
 ```fish
 set project_name [ProjectName] \
-&& set app_secret (tr -dc A-Za-z0-9 </dev/urandom | head -c 32 | string lower) \
+&& set app_secret (tr -dc a-z0-9 </dev/urandom | head -c 32) \
 && git clone --depth=1 git@github.com:Arkounay/sf6-boilerplate.git $project_name \
 && cd $project_name \
 && sed -i "s/sf6-boilerplate/$project_name/" .env \
