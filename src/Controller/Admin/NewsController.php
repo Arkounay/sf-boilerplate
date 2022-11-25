@@ -5,7 +5,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\News;
 
-class NewsController extends Crud
+class NewsController extends BaseCrud
 {
 
     public function getEntity(): string

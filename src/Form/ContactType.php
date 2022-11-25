@@ -31,6 +31,12 @@ class ContactType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Contact::class,
+            'antispam_time' => true,
+            'antispam_time_min' => 10,
+            'antispam_time_max' => 3600,
+            'antispam_honeypot' => true,
+            'antispam_honeypot_class' => 'd-none',
+            'antispam_honeypot_field' => 'email-repeat',
         ]);
     }
 }

@@ -4,11 +4,12 @@
 namespace App\Controller\Admin;
 
 
+use Arkounay\Bundle\QuickAdminGeneratorBundle\Controller\Crud;
 use Arkounay\Bundle\QuickAdminGeneratorBundle\Model\Fields;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-abstract class Crud extends \Arkounay\Bundle\QuickAdminGeneratorBundle\Controller\Crud
+abstract class BaseCrud extends Crud
 {
 
     protected function getFormFields(): Fields

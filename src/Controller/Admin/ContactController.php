@@ -6,7 +6,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Contact;
 
-class ContactController extends Crud
+class ContactController extends BaseCrud
 {
 
     public function getEntity(): string

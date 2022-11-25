@@ -25,14 +25,7 @@ class MainController extends AbstractController
     public function contact(Request $request, EntityManagerInterface $em, MailingService $mailingService): Response
     {
         $contact = new Contact();
-        $form = $this->createForm(ContactType::class, $contact, [
-            'antispam_time' => true,
-            'antispam_time_min' => 10,
-            'antispam_time_max' => 3600,
-            'antispam_honeypot' => true,
-            'antispam_honeypot_class' => 'd-none',
-            'antispam_honeypot_field' => 'email-repeat',
-        ]);
+        $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -40,9 +33,9 @@ class MainController extends AbstractController
             $em->flush();
             $mailingService->sendContact($contact);
             $this->addFlash('success', 'Merci, votre message a été envoyé. Nous reviendrons vers vous dès que possible.');
-
             return $this->redirectToRoute('contact');
         }
+
         return $this->renderForm('main/contact.html.twig', [
             'form' => $form,
         ]);
