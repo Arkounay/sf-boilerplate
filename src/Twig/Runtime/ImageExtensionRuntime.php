@@ -1,45 +1,19 @@
 <?php
 
-namespace App\Twig;
+namespace App\Twig\Runtime;
 
 use Gregwar\ImageBundle\ImageHandler;
 use Gregwar\ImageBundle\Services\ImageHandling;
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
+use Twig\Extension\RuntimeExtensionInterface;
 
-class ImageExtension extends AbstractExtension
+class ImageExtensionRuntime implements RuntimeExtensionInterface
 {
     private const SUPPORTED_EXTENSIONS = ['jpg', 'jpeg', 'png'];
 
     /**
      * @param ImageHandling $imageHandling
      */
-    public function __construct(private ImageHandling $imageHandling){}
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getFunctions(): array
-    {
-        return [
-            new TwigFunction('gImage', [$this, 'image'], ['is_safe' => ['html']]),
-            new TwigFunction('image_resize', [$this, 'resizeImage'], ['is_safe' => ['html']]),
-            new TwigFunction('image_zoom_crop', [$this, 'zoomCropImage'], ['is_safe' => ['html']]),
-            new TwigFunction('image_get_size', [$this, 'getImageSize'])
-        ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getFilters(): array
-    {
-        return [
-            new TwigFilter('alt', [$this, 'generateImageAltFromPath']),
-            new TwigFilter('extension', [$this, 'getExtension']),
-        ];
-    }
+    public function __construct(private ImageHandling $imageHandling) {}
 
     public function resizeImage(?string $path, ?int $width, ?int $height = null): string
     {
