@@ -96,7 +96,7 @@
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php74": "*",
         "symfony/polyfill-php80": "*",
-        "symfony/polyfill-php81": "*"e
+        "symfony/polyfill-php81": "*"
     },
     "scripts": {
         "auto-scripts": {
