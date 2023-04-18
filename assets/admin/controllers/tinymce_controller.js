@@ -100,10 +100,10 @@ export default class extends Controller {
             setup: (editor) => {
                 this.editor = editor;
                 editor.on('focus', function() {
-                    $(editor.contentAreaContainer.offsetParent).addClass('focus');
+                    editor.contentAreaContainer.offsetParent.classList.add('focus');
                 });
                 editor.on('blur', function() {
-                    $(editor.contentAreaContainer.offsetParent).removeClass('focus');
+                    editor.contentAreaContainer.offsetParent.classList.remove('focus');
                 });
                 if (this.triggerChangeValue) {
                     editor.on('change', () => {
