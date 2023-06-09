@@ -23,4 +23,5 @@ return [
     Gregwar\ImageBundle\GregwarImageBundle::class => ['all' => true],
     Arkounay\Bundle\TwigCopyLocationBundle\ArkounayTwigCopyLocationBundle::class => ['dev' => true, 'test' => true],
     Nucleos\AntiSpamBundle\NucleosAntiSpamBundle::class => ['all' => true],
+    Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
 ];
