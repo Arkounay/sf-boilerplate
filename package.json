@@ -22,9 +22,7 @@
     "scripts": {
         "dev": "encore dev",
         "watch": "encore dev --watch",
-        "build": "yarn iconfont && encore production",
-        "iconfont": "node bin/iconfont",
-        "livereload": "yarn watch & node bin/livereload",
+        "build": "encore production",
         "admin-dev": "encore dev --config webpack.admin.config.js",
         "admin-watch": "encore dev --watch --config webpack.admin.config.js",
         "admin-build": "encore production --config webpack.admin.config.js"
