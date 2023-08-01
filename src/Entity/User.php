@@ -3,8 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
-use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation\Crud;
+use Arkounay\Bundle\QuickAdminGeneratorBundle\Attribute as QAG;
+use Arkounay\Bundle\QuickAdminGeneratorBundle\Attribute\Crud;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;

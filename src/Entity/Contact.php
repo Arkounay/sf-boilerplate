@@ -3,7 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ContactRepository;
-use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
+use Arkounay\Bundle\QuickAdminGeneratorBundle\Attribute as QAG;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 

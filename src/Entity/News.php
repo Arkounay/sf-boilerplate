@@ -4,7 +4,7 @@ namespace App\Entity;
 
 use App\Form\Admin\TinymceType;
 use App\Repository\NewsRepository;
-use Arkounay\Bundle\QuickAdminGeneratorBundle\Annotation as QAG;
+use Arkounay\Bundle\QuickAdminGeneratorBundle\Attribute as QAG;
 use Arkounay\Bundle\UxMediaBundle\Validator as MediaAssert;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
