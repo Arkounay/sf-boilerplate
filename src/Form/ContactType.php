@@ -19,11 +19,6 @@ class ContactType extends AbstractType
             ->add('lastName')
             ->add('email')
             ->add('message', TextareaType::class)
-            ->add('recaptcha', EWZRecaptchaType::class, [
-                'label' => false,
-                'mapped' => false,
-                'constraints' => [new RecaptchaTrue()]
-            ])
         ;
     }
 
