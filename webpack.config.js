@@ -28,6 +28,9 @@ Encore
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
+    // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
+    .enableStimulusBridge('./assets/controllers.json')
+
     // will require an extra script tag for runtime.js
     // but, you probably want this, unless you're building a single-page app
     .enableSingleRuntimeChunk()
@@ -45,14 +48,16 @@ Encore
     // enables hashed filenames (e.g. app.abc123.css)
     .enableVersioning(Encore.isProduction())
 
-    .configureBabel((config) => {
-        config.plugins.push('@babel/plugin-proposal-class-properties');
-    })
+    // configure Babel
+    // .configureBabel((config) => {
+    //     config.plugins.push('@babel/a-babel-plugin');
+    // })
+
 
     // enables @babel/preset-env polyfills
     .configureBabelPresetEnv((config) => {
         config.useBuiltIns = 'usage';
-        config.corejs = 3;
+        config.corejs = '3.23';
     })
 
     // enables Sass/SCSS support
