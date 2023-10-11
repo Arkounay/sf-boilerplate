@@ -10,6 +10,7 @@ set project_name [ProjectName] \
 && sed -i "s/__app_secret__/$app_secret/" .env \
 && sed -i "s/__project_name__/$project_name/g" src/Service/MailingService.php \
 && sed -i "s/__project_name__/$project_name/g" config/packages/qag.yaml \
+&& sed -i "s/__project_name__/$project_name/g" templates/base.html.twig \
 && composer install \
 && rm -rf .git \
 && rm README.md \
