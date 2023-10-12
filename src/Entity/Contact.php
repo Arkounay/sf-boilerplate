@@ -55,7 +55,7 @@ class Contact
         return $this->firstName;
     }
 
-    public function setFirstName(?string $firstName): self
+    public function setFirstName(?string $firstName): static
     {
         $this->firstName = $firstName;
         return $this;
@@ -66,7 +66,7 @@ class Contact
         return $this->lastName;
     }
 
-    public function setLastName(?string $lastName): self
+    public function setLastName(?string $lastName): static
     {
         $this->lastName = $lastName;
         return $this;
@@ -77,7 +77,7 @@ class Contact
         return $this->email;
     }
 
-    public function setEmail(?string $email): self
+    public function setEmail(?string $email): static
     {
         $this->email = $email;
         return $this;
@@ -88,7 +88,7 @@ class Contact
         return $this->message;
     }
 
-    public function setMessage(?string $message): self
+    public function setMessage(?string $message): static
     {
         $this->message = $message;
         return $this;
@@ -99,7 +99,7 @@ class Contact
         return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $createdAt): self
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
     {
         $this->createdAt = $createdAt;
         return $this;

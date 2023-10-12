@@ -3,8 +3,8 @@
 
 namespace App\Entity\Trait;
 
-use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 trait Moveable
 {
@@ -18,9 +18,10 @@ trait Moveable
         return $this->position;
     }
 
-    public function setPosition(int $position): void
+    public function setPosition(int $position): static
     {
         $this->position = $position;
+        return $this;
     }
 
 }

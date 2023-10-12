@@ -65,7 +65,7 @@ class News
         return $this->startDate;
     }
 
-    public function setStartDate(?DateTime $startDate): self
+    public function setStartDate(?DateTime $startDate): static
     {
         $this->startDate = $startDate;
         return $this;
@@ -76,7 +76,7 @@ class News
         return $this->endDate;
     }
 
-    public function setEndDate(?DateTime $endDate): self
+    public function setEndDate(?DateTime $endDate): static
     {
         $this->endDate = $endDate;
         return $this;
@@ -87,7 +87,7 @@ class News
         return $this->title;
     }
 
-    public function setTitle(?string $title): self
+    public function setTitle(?string $title): static
     {
         $this->title = $title;
         return $this;
@@ -98,7 +98,7 @@ class News
         return $this->content;
     }
 
-    public function setContent(?string $content): self
+    public function setContent(?string $content): static
     {
         $this->content = $content;
         return $this;
@@ -109,7 +109,7 @@ class News
         return $this->image;
     }
 
-    public function setImage(?string $image): self
+    public function setImage(?string $image): static
     {
         $this->image = $image;
         return $this;
@@ -120,7 +120,7 @@ class News
         return $this->slug;
     }
 
-    public function setSlug(string $slug): self
+    public function setSlug(string $slug): static
     {
         $this->slug = $slug;
         return $this;
