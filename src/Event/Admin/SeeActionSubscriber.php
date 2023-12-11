@@ -13,7 +13,7 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 class SeeActionSubscriber implements EventSubscriberInterface
 {
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             'qag.events.actions' => 'actionEvent',

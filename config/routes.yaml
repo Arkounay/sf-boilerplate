@@ -4,12 +4,12 @@ controllers:
 
 file_manager:
     resource: "@ArtgrisFileManagerBundle/Controller"
-    type:     annotation
+    type:     attribute
     prefix:   /admin/manager
 
 ux_media:
     resource: "@ArkounayUxMediaBundle/Controller"
-    type: annotation
+    type: attribute
     prefix: /admin/ux-media
 
 qag_routes:

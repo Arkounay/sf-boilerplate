@@ -17,7 +17,7 @@ class UserType extends AbstractType
 
     public function __construct(private UserPasswordHasherInterface $userPasswordHasher){}
 
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $creation = $builder->getData()?->getId() === null;
 
