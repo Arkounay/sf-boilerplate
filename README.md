@@ -11,7 +11,7 @@ set project_name [ProjectName] \
 && sed -i "s/__project_name__/$project_name/g" src/Service/MailingService.php \
 && sed -i "s/__project_name__/$project_name/g" config/packages/qag.yaml \
 && sed -i "s/__project_name__/$project_name/g" templates/base.html.twig \
-&& sed -i "s/__project_name__/$project_name/g" .env.local \
+&& sed -i "s/__project_name__/$project_name/g" .env \
 && composer install \
 && rm -rf .git \
 && rm README.md \
