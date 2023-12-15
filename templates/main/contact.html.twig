@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    
-    {% for flash_message in app.session.flashbag.get('success') %}
+
+    {% for flash_message in app.flashes('success') %}
         <div class="box box-success">{{ flash_message }}</div>
     {% endfor %}
     
